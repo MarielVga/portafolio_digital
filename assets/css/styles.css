@@ -1,0 +1,48 @@
+/* Variables globales (Fácil mantenimiento para paletas de colores) */
+:root {
+    --primary-color: #4f46e5; /* Indigo 600 */
+    --hover-color: #4338ca;   /* Indigo 700 */
+    --transition-speed: 0.3s;
+}
+
+/* Scrollbar personalizado y limpio */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+.dark ::-webkit-scrollbar-thumb { background: #475569; }
+
+/* Clases reutilizables para mantener el HTML limpio */
+
+/* Degradado elegante para la Portada (Hero) */
+.hero-gradient {
+    background: linear-gradient(135deg, rgba(79, 70, 229, 0.05), rgba(236, 72, 153, 0.05));
+    border-bottom: 1px solid rgba(127, 127, 127, 0.1);
+}
+.dark .hero-gradient {
+    background: linear-gradient(135deg, rgba(30, 27, 75, 0.8), rgba(80, 7, 36, 0.5));
+}
+
+/* Efectos 3D interactivos para las tarjetas de proyectos */
+.card-interactive {
+    transition: all var(--transition-speed) ease;
+}
+.card-interactive:hover {
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Efecto hover suave para los botones */
+.btn-primary-hover {
+    transition: all var(--transition-speed) ease;
+}
+.btn-primary-hover:hover {
+    background-color: var(--hover-color);
+    transform: translateY(-2px);
+}
+
+/* Configuración de impresión limpia */
+@media print {
+    .no-print { display: none !important; }
+    body { background-color: white !important; color: black !important; }
+    .print-page-break { page-break-before: always; }
+}

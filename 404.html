@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es" class="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página no encontrada | Mariela Vega</title>
+    
+    <!-- Etiqueta obligatoria para que los buscadores NO indexen este error -->
+    <meta name="robots" content="noindex,follow">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-100 dark:bg-gray-950 text-gray-800 dark:text-gray-200 font-sans min-h-screen flex items-center justify-center transition-colors duration-400">
+
+    <main class="container mx-auto px-4 text-center">
+        <section class="max-w-2xl mx-auto bg-white dark:bg-slate-900 p-12 rounded-2xl shadow-xl border border-gray-100 dark:border-slate-800">
+            <p class="text-indigo-600 dark:text-indigo-400 font-bold text-6xl md:text-8xl mb-4">404</p>
+            <h1 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4">Página no encontrada</h1>
+            <p class="text-gray-600 dark:text-gray-400 mb-8">
+                La dirección que buscas no existe, ha sido movida o escrita incorrectamente.
+            </p>
+            
+            <!-- Botón de retorno absoluto para evitar rutas relativas rotas -->
+            <a href="https://marielvga.github.io/portafolio-mariela/" class="inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 text-white font-medium rounded-xl btn-primary-hover shadow-md">
+                <i class="fa-solid fa-arrow-left"></i> Volver al portafolio
+            </a>
+        </section>
+    </main>
+
+    <!-- Usamos el mismo script para mantener la preferencia de tema oscuro -->
+    <script type="module" src="./assets/js/app.js"></script>
+</body>
+</html>
