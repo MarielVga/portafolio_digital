@@ -9,20 +9,20 @@
     <title>Mariela Vega | Full Stack Developer - Portafolio</title>
     <meta name="description" content="Portafolio profesional de Mariela Vega, desarrolladora Full Stack / Junior Tech. Casos de estudio en JavaScript, Node.js y React.">
 
-    <!-- Open Graph (Redes Sociales) -->
+    <!-- Open Graph -->
     <meta property="og:title" content="Mariela Vega - Portafolio Digital">
     <meta property="og:description" content="Explora mis proyectos y habilidades en desarrollo web frontend y backend.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://marielvga.github.io/portafolio-mariela/">
 
-    <!-- Tailwind CSS y FontAwesome -->
+    <!-- Dependencias externas -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Estilos locales -->
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
-    <!-- Configuración inicial de Tailwind -->
+    <!-- Configuración Tailwind -->
     <script>
         tailwind.config = {
             darkMode: 'class',
@@ -36,7 +36,7 @@
         }
     </script>
 
-    <!-- Datos Estructurados (JSON-LD) -->
+    <!-- Datos Estructurados JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -54,13 +54,13 @@
 
 <body class="bg-gray-100 dark:bg-gray-950 text-gray-800 dark:text-gray-200 font-sans min-h-screen pt-24 pb-12 transition-colors duration-400">
 
-    <!-- Accesibilidad: Saltar al contenido principal -->
+    <!-- Skip-link para accesibilidad por teclado -->
     <a href="#main-content" class="skip-link sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-indigo-600 text-white px-4 py-2 rounded-md z-50">
         Saltar al contenido principal
     </a>
 
-    <!-- Controles flotantes: Tema oscuro e Impresión -->
-    <div id="controls" class="no-print fixed top-4 left-1/2 transform -translate-x-1/2 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border border-gray-200 dark:border-gray-700 px-6 py-3 rounded-full z-50 flex items-center gap-4 shadow-lg">
+    <!-- Controles flotantes: Tema oscuro e impresión -->
+    <div id="controls" class="fixed top-4 left-1/2 transform -translate-x-1/2 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border border-gray-200 dark:border-gray-700 px-6 py-3 rounded-full z-50 flex items-center gap-4 shadow-lg">
         <button id="themeToggle" class="p-2.5 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-yellow-400 hover:bg-gray-200 dark:hover:bg-gray-700 transition" aria-label="Alternar modo oscuro">
             <i class="fa-solid fa-moon dark:hidden"></i>
             <i class="fa-solid fa-sun hidden dark:inline"></i>
@@ -73,16 +73,20 @@
 
     <main id="main-content" class="container mx-auto px-4">
         
-        <!-- Portada (Hero Section) -->
-        <header class="relative p-10 md:p-12 overflow-hidden hero-gradient border-b border-gray-100 dark:border-slate-800/50">
+        <!-- Hero Section -->
+        <header class="relative bg-gradient-to-r from-indigo-50 via-purple-50 to-pink-50 dark:from-indigo-950 dark:via-purple-900/50 dark:to-fuchsia-950 p-10 md:p-12 border-b border-gray-100 dark:border-slate-800/50 overflow-hidden">
+            
+            <!-- Decoración de fondo -->
             <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 rounded-full bg-purple-200/50 dark:bg-purple-600/20 blur-3xl"></div>
 
             <div class="flex flex-col md:flex-row items-center md:items-start gap-8 relative z-10">
+                <!-- Avatar -->
                 <div class="relative group shrink-0">
                     <div class="absolute inset-0 bg-indigo-500 rounded-2xl rotate-6 opacity-50 dark:opacity-30"></div>
                     <img src="https://media.licdn.com/dms/image/v2/C5603AQEsfiaxxJDxvg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1516840621088?e=1791417600&v=beta&t=1yGWozjoJ4HTxZ23X_B5Ad6iTmYTVSRCydur7s3kTmc" alt="Fotografía de Mariela Vega" class="relative w-32 h-32 rounded-2xl shadow-lg object-cover">
                 </div>
 
+                <!-- Presentación -->
                 <div class="text-center md:text-left flex-1 w-full">
                     <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-2 tracking-tight">Mariela Vega</h1>
                     <p class="text-lg text-indigo-600 dark:text-indigo-400 font-medium mb-4 bg-indigo-50 dark:bg-indigo-900/30 inline-block px-3 py-1 rounded-lg">
@@ -93,8 +97,9 @@
                         interfaces web interactivas y modulares utilizando HTML, CSS, JavaScript y consumo de APIs REST.
                     </p>
 
+                    <!-- CTA -->
                     <nav class="flex flex-wrap justify-center md:justify-start gap-3" aria-label="Enlaces profesionales">
-                        <a href="#proyectos" class="px-5 py-2.5 bg-indigo-600 text-white rounded-xl text-sm font-medium btn-primary-hover shadow-sm">
+                        <a href="#proyectos" class="px-5 py-2.5 bg-indigo-600 text-white rounded-xl text-sm font-medium hover:bg-indigo-700 transition shadow-sm">
                             Ver proyectos
                         </a>
                         <a href="https://github.com/MarielVga" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 bg-white dark:bg-slate-800 rounded-xl text-sm text-gray-700 dark:text-gray-200 flex items-center gap-2 border border-gray-200 dark:border-slate-700 hover:bg-gray-50 dark:hover:bg-slate-700 transition">
@@ -107,235 +112,260 @@
                 </div>
             </div>
         </header>
+    </main>
 
-        <!-- Aporte de Valor -->
-        <section class="p-8 md:p-12 border-b border-gray-100 dark:border-slate-800" aria-labelledby="skills-title">
-            <h2 id="skills-title" class="text-2xl font-bold text-gray-900 dark:text-white flex items-center gap-3 mb-6">
-                <span class="w-10 h-10 rounded-xl bg-pink-50 dark:bg-pink-900/50 text-pink-600 flex items-center justify-center">
-                    <i class="fa-solid fa-hand-holding-heart"></i>
-                </span>
-                Aporte de Valor y Tecnologías
-            </h2>
+    <!-- Sección: Aporte de Valor -->
+    <section class="p-8 md:p-12 border-b border-gray-100 dark:border-slate-800" aria-labelledby="skills-title">
+        <h2 id="skills-title" class="text-2xl font-bold text-gray-900 dark:text-white flex items-center gap-3 mb-6">
+            <span class="w-10 h-10 rounded-xl bg-pink-50 dark:bg-pink-900/50 text-pink-600 flex items-center justify-center">
+                <i class="fa-solid fa-hand-holding-heart"></i>
+            </span>
+            Aporte de Valor y Tecnologías
+        </h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-gray-50 dark:bg-slate-800/50 p-5 rounded-2xl border border-gray-100 dark:border-slate-700">
-                    <h3 class="font-bold text-gray-800 dark:text-gray-200 mb-2">Frontend Dinámico</h3>
-                    <p class="text-sm text-gray-600 dark:text-slate-400">Manipulación avanzada del DOM, asincronía (Promesas/Fetch) y diseño responsivo (Tailwind, CSS3).</p>
-                </div>
-                <div class="bg-gray-50 dark:bg-slate-800/50 p-5 rounded-2xl border border-gray-100 dark:border-slate-700">
-                    <h3 class="font-bold text-gray-800 dark:text-gray-200 mb-2">Resolución Ágil</h3>
-                    <p class="text-sm text-gray-600 dark:text-slate-400">Capacidad analítica estructurada para enfrentar bloqueos y adaptar rápidamente nuevas tecnologías.</p>
-                </div>
-                <div class="bg-gray-50 dark:bg-slate-800/50 p-5 rounded-2xl border border-gray-100 dark:border-slate-700">
-                    <h3 class="font-bold text-gray-800 dark:text-gray-200 mb-2">Flujo de Trabajo</h3>
-                    <p class="text-sm text-gray-600 dark:text-slate-400">Integración con APIs REST (Node.js/Express) y uso de control de versiones con Git y GitHub.</p>
-                </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-gray-50 dark:bg-slate-800/50 p-5 rounded-2xl border border-gray-100 dark:border-slate-700">
+                <h3 class="font-bold text-gray-800 dark:text-gray-200 mb-2">Frontend Dinámico</h3>
+                <p class="text-sm text-gray-600 dark:text-slate-400">Manipulación avanzada del DOM, asincronía (Promesas/Fetch) y diseño responsivo (Tailwind, Bootstrap).</p>
             </div>
-        </section>
-
-        <!-- Proyectos Destacados -->
-        <section id="proyectos" class="p-8 md:p-12 bg-white dark:bg-slate-900 border-b border-gray-100 dark:border-slate-800" aria-labelledby="proyectos-title">
-            <h2 id="proyectos-title" class="text-2xl font-bold text-gray-900 dark:text-white flex items-center gap-3 mb-8">
-                <span class="w-10 h-10 rounded-xl bg-indigo-50 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400 flex items-center justify-center shadow-sm">
-                    <i class="fa-solid fa-laptop-code"></i>
-                </span>
-                Proyectos Destacados
-            </h2>
-
-            <div class="space-y-8">
-                <!-- Proyecto 1: TaskFlow -->
-                <article class="group bg-white dark:bg-slate-800 rounded-2xl p-6 border-2 border-indigo-100 dark:border-slate-700 shadow-sm card-interactive relative overflow-hidden">
-                    <div class="flex justify-between items-start mb-4">
-                        <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
-                            🚀 TaskFlow (Caso de Estudio)
-                        </h3>
-                        <span class="text-xs font-bold text-indigo-700 dark:text-indigo-300 bg-indigo-100 dark:bg-indigo-900/50 px-3 py-1 rounded-full">Proyecto Principal</span>
-                    </div>
-
-                    <p class="text-sm text-gray-600 dark:text-slate-300 mb-5 leading-relaxed">
-                        Aplicación web interactiva para la gestión de tareas. Permite a los usuarios agregar, visualizar, completar y eliminar tareas dinámicamente, garantizando una experiencia fluida mediante el consumo asíncrono de datos.
-                    </p>
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5">
-                        <div class="bg-gray-50 dark:bg-slate-900/50 p-4 rounded-xl border border-gray-100 dark:border-slate-800">
-                            <h4 class="text-xs font-bold text-gray-900 dark:text-white uppercase mb-2">
-                                <i class="fa-solid fa-circle-exclamation text-amber-500 mr-1"></i> El Desafío
-                            </h4>
-                            <p class="text-xs text-gray-600 dark:text-slate-400">Desarrollar una aplicación escalable aplicando programación orientada a objetos (POO), manejo de asincronía (Promesas) y consumo de APIs dinámicas.</p>
-                        </div>
-                        <div class="bg-gray-50 dark:bg-slate-900/50 p-4 rounded-xl border border-gray-100 dark:border-slate-800">
-                            <h4 class="text-xs font-bold text-gray-900 dark:text-white uppercase mb-2">
-                                <i class="fa-solid fa-lightbulb text-emerald-500 mr-1"></i> La Solución
-                            </h4>
-                            <p class="text-xs text-gray-600 dark:text-slate-400">Implementación de una arquitectura modular en JavaScript Vanilla, manipulando el DOM eficientemente sin recargar la página tras cada acción del usuario.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="text-xs px-2.5 py-1 bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-300 rounded-md"><i class="fa-brands fa-html5"></i> HTML5</span>
-                        <span class="text-xs px-2.5 py-1 bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300 rounded-md"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
-                        <span class="text-xs px-2.5 py-1 bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300 rounded-md"><i class="fa-brands fa-js"></i> JavaScript ES6+</span>
-                        <span class="text-xs px-2.5 py-1 bg-gray-100 text-gray-800 dark:bg-slate-700 dark:text-gray-300 rounded-md"><i class="fa-solid fa-server"></i> Fetch API</span>
-                    </div>
-
-                    <div class="flex flex-wrap gap-3 mt-4 pt-4 border-t border-gray-100 dark:border-slate-700">
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-indigo-600 text-white rounded-lg text-sm font-medium btn-primary-hover flex items-center gap-2">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-                        </a>
-                        <a href="https://github.com/MarielVga/TaskFlow" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-white dark:bg-slate-800 text-gray-700 dark:text-gray-200 border border-gray-200 dark:border-slate-600 rounded-lg text-sm font-medium hover:bg-gray-50 dark:hover:bg-slate-700 transition flex items-center gap-2">
-                            <i class="fa-brands fa-github text-lg"></i> Source Code
-                        </a>
-                    </div>
-                </article>
-
-                <!-- Proyecto 2: Alke Wallet -->
-                <article class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-gray-100 dark:border-slate-700 shadow-sm card-interactive">
-                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
-                        <div>
-                            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">💼 Alke Wallet</h3>
-                            <p class="text-sm text-gray-600 dark:text-slate-400">Aplicación de billetera digital para gestionar activos financieros mediante una interfaz segura, intuitiva y fácil de usar.</p>
-                        </div>
-                        <div class="flex gap-2 shrink-0">
-                            <a href="#" target="_blank" rel="noopener noreferrer" class="p-2 text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-900/30 hover:bg-indigo-100 dark:hover:bg-indigo-900/50 rounded-lg transition" aria-label="Ver demostración en vivo">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                            <a href="https://github.com/MarielVga/Alke-Wallet" target="_blank" rel="noopener noreferrer" class="p-2 text-gray-700 dark:text-gray-300 bg-gray-100 dark:bg-slate-700 hover:bg-gray-200 dark:hover:bg-slate-600 rounded-lg transition" aria-label="Ver código fuente en GitHub">
-                                <i class="fa-brands fa-github text-lg"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="text-xs px-2 py-1 bg-gray-100 text-gray-600 dark:bg-slate-700 dark:text-gray-300 rounded-md">HTML/CSS</span>
-                        <span class="text-xs px-2 py-1 bg-gray-100 text-gray-600 dark:bg-slate-700 dark:text-gray-300 rounded-md">JavaScript Base</span>
-                        <span class="text-xs px-2 py-1 bg-gray-100 text-gray-600 dark:bg-slate-700 dark:text-gray-300 rounded-md">Manipulación DOM</span>
-                    </div>
-                </article>
-
-                <!-- Proyecto 3: App Backend Node Express -->
-                <article class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-gray-100 dark:border-slate-700 shadow-sm card-interactive">
-                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
-                        <div>
-                            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">⚙️ App Backend Node.js Express</h3>
-                            <p class="text-sm text-gray-600 dark:text-slate-400">Desarrollo de servicios REST y acceso a datos construidos para facilitar la integración de componentes Frontend (Módulos 6 al 8).</p>
-                        </div>
-                        <div class="flex gap-2 shrink-0">
-                            <a href="https://github.com/MarielVga/Node-Express-Web-App-" target="_blank" rel="noopener noreferrer" class="p-2 text-gray-700 dark:text-gray-300 bg-gray-100 dark:bg-slate-700 hover:bg-gray-200 dark:hover:bg-slate-600 rounded-lg transition" aria-label="Ver código fuente en GitHub">
-                                <i class="fa-brands fa-github text-lg"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="text-xs px-2 py-1 bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300 rounded-md"><i class="fa-brands fa-node-js"></i> Node.js</span>
-                        <span class="text-xs px-2 py-1 bg-gray-100 text-gray-600 dark:bg-slate-700 dark:text-gray-300 rounded-md">Express</span>
-                        <span class="text-xs px-2 py-1 bg-gray-100 text-gray-600 dark:bg-slate-700 dark:text-gray-300 rounded-md">Servicios REST</span>
-                    </div>
-                </article>
+            <div class="bg-gray-50 dark:bg-slate-800/50 p-5 rounded-2xl border border-gray-100 dark:border-slate-700">
+                <h3 class="font-bold text-gray-800 dark:text-gray-200 mb-2">Resolución Ágil</h3>
+                <p class="text-sm text-gray-600 dark:text-slate-400">Implementación de manejo de errores, rollback de transacciones y persistencia en LocalStorage.</p>
             </div>
-        </section>
+            <div class="bg-gray-50 dark:bg-slate-800/50 p-5 rounded-2xl border border-gray-100 dark:border-slate-700">
+                <h3 class="font-bold text-gray-800 dark:text-gray-200 mb-2">Flujo de Trabajo</h3>
+                <p class="text-sm text-gray-600 dark:text-slate-400">Integración con APIs REST (Node.js/Express) y uso de control de versiones con Git y GitHub.</p>
+            </div>
+        </div>
+    </section>
 
-        <!-- Análisis de Mercado -->
-        <section class="p-8 md:p-12 bg-gray-50 dark:bg-slate-800/30 border-b border-gray-100 dark:border-slate-800 print-page-break" aria-labelledby="mercado-title">
-            <h2 id="mercado-title" class="text-2xl font-bold text-gray-900 dark:text-white flex items-center gap-3 mb-8">
-                <span class="w-10 h-10 rounded-xl bg-teal-50 dark:bg-teal-900/50 text-teal-600 dark:text-teal-400 flex items-center justify-center shadow-sm">
-                    <i class="fa-solid fa-magnifying-glass-chart"></i>
-                </span>
-                Análisis de Mercado (Empresas Objetivo)
-            </h2>
+    <!-- Sección: Proyectos -->
+    <section id="proyectos" class="p-8 md:p-12 bg-white dark:bg-slate-900 border-b border-gray-100 dark:border-slate-800" aria-labelledby="proyectos-title">
+        <h2 id="proyectos-title" class="text-2xl font-bold text-gray-900 dark:text-white flex items-center gap-3 mb-8">
+            <span class="w-10 h-10 rounded-xl bg-indigo-50 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400 flex items-center justify-center shadow-sm">
+                <i class="fa-solid fa-laptop-code"></i>
+            </span>
+            Proyectos Destacados
+        </h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                <article class="bg-white dark:bg-slate-800 p-6 rounded-2xl border-l-4 border-teal-500 shadow-sm">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-3 flex items-center justify-between">
-                        SONDA <span class="text-xs bg-gray-100 dark:bg-slate-700 px-2 py-1 rounded text-gray-600 dark:text-gray-300 uppercase font-semibold">Nacional</span>
+        <div class="space-y-8">
+            
+            <!-- Proyecto 1: Alke Wallet (AHORA ES EL CASO DE ESTUDIO PRINCIPAL) -->
+            <article class="group bg-white dark:bg-slate-800 rounded-2xl p-6 border-2 border-indigo-100 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300 relative overflow-hidden">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                        💼 Alke Wallet (Caso de Estudio)
                     </h3>
-                    <ul class="text-sm text-gray-600 dark:text-slate-400 space-y-2">
-                        <li><strong class="text-gray-800 dark:text-gray-200">Valores:</strong> Inclusión y reducción de brecha digital de género.</li>
-                        <li><strong class="text-gray-800 dark:text-gray-200">Productos:</strong> Soluciones TI y transformación digital.</li>
-                        <li><strong class="text-gray-800 dark:text-gray-200">Metodología:</strong> Desarrollo ágil con equipos interdisciplinarios.</li>
-                    </ul>
-                </article>
+                    <span class="text-xs font-bold text-indigo-700 dark:text-indigo-300 bg-indigo-100 dark:bg-indigo-900/50 px-3 py-1 rounded-full">Proyecto Principal</span>
+                </div>
 
-                <article class="bg-white dark:bg-slate-800 p-6 rounded-2xl border-l-4 border-blue-500 shadow-sm">
-                    <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-3 flex items-center justify-between">
-                        GOOGLE <span class="text-xs bg-gray-100 dark:bg-slate-700 px-2 py-1 rounded text-gray-600 dark:text-gray-300 uppercase font-semibold">Internacional</span>
-                    </h3>
-                    <ul class="text-sm text-gray-600 dark:text-slate-400 space-y-2">
-                        <li><strong class="text-gray-800 dark:text-gray-200">Valores:</strong> Accesibilidad mundial e innovación tecnológica.</li>
-                        <li><strong class="text-gray-800 dark:text-gray-200">Tecnologías:</strong> HTML, CSS, JS, Python, Cloud.</li>
-                        <li><strong class="text-gray-800 dark:text-gray-200">Metodología:</strong> Entornos dinámicos y Code Review.</li>
-                    </ul>
-                </article>
-            </div>
+                <p class="text-sm text-gray-600 dark:text-slate-300 mb-5 leading-relaxed">
+                    Aplicación de billetera digital para gestionar activos financieros de manera 100% digital. Permite a los usuarios tener un control de saldos e ingresos, realizar transferencias rápidas a su agenda y visualizar un historial detallado de movimientos.
+                </p>
 
-            <!-- Preguntas para entrevista -->
-            <div class="bg-amber-50/80 dark:bg-amber-900/10 p-6 rounded-2xl border border-amber-100 dark:border-amber-900/30">
-                <h3 class="font-bold text-amber-800 dark:text-amber-400 mb-3 flex items-center gap-2">
-                    <i class="fa-regular fa-comments"></i> Preguntas preparadas para entrevista
+                <!-- Desafío y Solución técnica centrada en Alke Wallet -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5">
+                    <div class="bg-gray-50 dark:bg-slate-900/50 p-4 rounded-xl border border-gray-100 dark:border-slate-800">
+                        <h4 class="text-xs font-bold text-gray-900 dark:text-white uppercase mb-2">
+                            <i class="fa-solid fa-circle-exclamation text-amber-500 mr-1"></i> El Desafío
+                        </h4>
+                        <ul class="text-xs text-gray-600 dark:text-slate-400 space-y-1">
+                            <li><i class="fa-solid fa-check text-indigo-500"></i> Diseñar una interfaz Mobile-First utilizando componentes de Bootstrap.</li>
+                            <li><i class="fa-solid fa-check text-indigo-500"></i> Manejar sesiones de usuario, balances y transferencias simulando una base de datos segura.</li>
+                            <li><i class="fa-solid fa-check text-indigo-500"></i> Implementar manejo de errores (rollback) en transacciones fallidas.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-50 dark:bg-slate-900/50 p-4 rounded-xl border border-gray-100 dark:border-slate-800">
+                        <h4 class="text-xs font-bold text-gray-900 dark:text-white uppercase mb-2">
+                            <i class="fa-solid fa-lightbulb text-emerald-500 mr-1"></i> La Solución
+                        </h4>
+                        <ul class="text-xs text-gray-600 dark:text-slate-400 space-y-1">
+                            <li><i class="fa-solid fa-check text-indigo-500"></i> Uso de etiquetas HTML semánticas y el sistema de grillas de Bootstrap para UI/UX.</li>
+                            <li><i class="fa-solid fa-check text-indigo-500"></i> Lógica en jQuery y JS Vanilla para persistencia con <code>localStorage</code> (guardando transacciones y saldos).</li>
+                            <li><i class="fa-solid fa-check text-indigo-500"></i> Alertas interactivas dinámicas para la validación de credenciales en el login.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Stack Tecnológico -->
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="text-xs px-2.5 py-1 bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-300 rounded-md"><i class="fa-brands fa-html5"></i> HTML5</span>
+                    <span class="text-xs px-2.5 py-1 bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-300 rounded-md"><i class="fa-brands fa-bootstrap"></i> Bootstrap 5</span>
+                    <span class="text-xs px-2.5 py-1 bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300 rounded-md"><i class="fa-brands fa-js"></i> JavaScript & jQuery</span>
+                    <span class="text-xs px-2.5 py-1 bg-gray-100 text-gray-800 dark:bg-slate-700 dark:text-gray-300 rounded-md"><i class="fa-solid fa-database"></i> LocalStorage</span>
+                </div>
+
+                <p>Para la demo el usuario es: test@wallet.com</p>
+                <p>y su contraseña es: 1234</p>
+
+                <!-- Enlaces de Evidencia -->
+                <div class="flex flex-wrap gap-3 mt-4 pt-4 border-t border-gray-100 dark:border-slate-700">
+                    <a href="https://marielvga.github.io/Alke-Wallet/" target="_blank" rel="noopener noreferrer"
+                        class="px-4 py-2 bg-indigo-600 text-white rounded-lg text-sm font-medium hover:bg-indigo-700 transition flex items-center gap-2">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                    </a>
+                    <a href="https://github.com/MarielVga/Alke-Wallet" target="_blank" rel="noopener noreferrer"
+                        class="px-4 py-2 bg-white dark:bg-slate-800 text-gray-700 dark:text-gray-200 border border-gray-200 dark:border-slate-600 rounded-lg text-sm font-medium hover:bg-gray-50 dark:hover:bg-slate-700 transition flex items-center gap-2">
+                        <i class="fa-brands fa-github text-lg"></i> Source Code
+                    </a>
+                </div>
+            </article>
+
+            <!-- Proyecto 2: TaskFlow (Ahora proyecto secundario) -->
+            <article class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-gray-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-all duration-300">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">🚀 TaskFlow</h3>
+                        <p class="text-sm text-gray-600 dark:text-slate-400">Aplicación web interactiva para la gestión de tareas aplicando programación orientada a objetos (POO) y consumo de APIs dinámicas.</p>
+                    </div>
+                    <div class="flex gap-2 shrink-0">
+                        <a href="https://marielvga.github.io/TaskFlow/" target="_blank" rel="noopener noreferrer"
+                            class="p-2 text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-900/30 hover:bg-indigo-100 dark:hover:bg-indigo-900/50 rounded-lg transition"
+                            aria-label="Ver demostración en vivo">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                        <a href="https://github.com/MarielVga/TaskFlow" target="_blank" rel="noopener noreferrer"
+                            class="p-2 text-gray-700 dark:text-gray-300 bg-gray-100 dark:bg-slate-700 hover:bg-gray-200 dark:hover:bg-slate-600 rounded-lg transition"
+                            aria-label="Ver código fuente en GitHub">
+                            <i class="fa-brands fa-github text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="text-xs px-2 py-1 bg-gray-100 text-gray-600 dark:bg-slate-700 dark:text-gray-300 rounded-md">HTML/CSS</span>
+                    <span class="text-xs px-2 py-1 bg-gray-100 text-gray-600 dark:bg-slate-700 dark:text-gray-300 rounded-md">JavaScript ES6+</span>
+                    <span class="text-xs px-2 py-1 bg-gray-100 text-gray-600 dark:bg-slate-700 dark:text-gray-300 rounded-md">Fetch API</span>
+                </div>
+            </article>
+
+            <!-- Proyecto 3: App Backend Node Express -->
+            <article class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-gray-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-all duration-300">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">⚙️ App Backend Node.js Express</h3>
+                        <p class="text-sm text-gray-600 dark:text-slate-400">Desarrollo de servicios REST, modularización y acceso a datos para facilitar la integración de componentes Frontend.</p>
+                    </div>
+                    <div class="flex gap-2 shrink-0">
+                        <a href="https://marielvga.github.io/Node-Express-Web-App-/" target="_blank" rel="noopener noreferrer" class="p-2 text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-900/30 hover:bg-indigo-100 dark:hover:bg-indigo-900/50 rounded-lg transition" aria-label="Ver demostración en vivo">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                        <a href="https://github.com/MarielVga/Node-Express-Web-App-" target="_blank" rel="noopener noreferrer"
+                            class="p-2 text-gray-700 dark:text-gray-300 bg-gray-100 dark:bg-slate-700 hover:bg-gray-200 dark:hover:bg-slate-600 rounded-lg transition"
+                            aria-label="Ver código fuente en GitHub">
+                            <i class="fa-brands fa-github text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="text-xs px-2 py-1 bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300 rounded-md"><i class="fa-brands fa-node-js"></i> Node.js</span>
+                    <span class="text-xs px-2 py-1 bg-gray-100 text-gray-600 dark:bg-slate-700 dark:text-gray-300 rounded-md">Express</span>
+                    <span class="text-xs px-2 py-1 bg-gray-100 text-gray-600 dark:bg-slate-700 dark:text-gray-300 rounded-md">Servicios REST</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Análisis de Mercado -->
+    <section class="p-8 md:p-12 bg-gray-50 dark:bg-slate-800/30 border-b border-gray-100 dark:border-slate-800 print-page-break" aria-labelledby="mercado-title">
+        <h2 id="mercado-title" class="text-2xl font-bold text-gray-900 dark:text-white flex items-center gap-3 mb-8">
+            <span class="w-10 h-10 rounded-xl bg-teal-50 dark:bg-teal-900/50 text-teal-600 dark:text-teal-400 flex items-center justify-center shadow-sm">
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+            </span>
+            Análisis de Mercado (Empresas Objetivo)
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <article class="bg-white dark:bg-slate-800 p-6 rounded-2xl border-l-4 border-teal-500 shadow-sm">
+                <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-3 flex items-center justify-between">
+                    SONDA <span class="text-xs bg-gray-100 dark:bg-slate-700 px-2 py-1 rounded text-gray-600 dark:text-gray-300 uppercase font-semibold">Nacional</span>
                 </h3>
-                <ul class="space-y-3 text-sm text-gray-700 dark:text-slate-300 list-disc pl-5">
-                    <li>Considerando el stack tecnológico, ¿qué herramientas o frameworks consideran prioritarios que un perfil Junior domine durante sus primeros 3 meses?</li>
-                    <li>¿Cómo estructuran el proceso de mentoría o acompañamiento para los roles Trainee que ingresan al área de desarrollo?</li>
-                    <li>¿Cuáles son los desafíos técnicos más grandes que enfrenta el equipo en el proyecto al que me estaría incorporando?</li>
+                <ul class="text-sm text-gray-600 dark:text-slate-400 space-y-2">
+                    <li><strong class="text-gray-800 dark:text-gray-200">Valores:</strong> Inclusión y reducción de brecha digital de género.</li>
+                    <li><strong class="text-gray-800 dark:text-gray-200">Productos:</strong> Soluciones TI y transformación digital.</li>
+                    <li><strong class="text-gray-800 dark:text-gray-200">Metodología:</strong> Desarrollo ágil con equipos interdisciplinarios.</li>
+                </ul>
+            </article>
+
+            <article class="bg-white dark:bg-slate-800 p-6 rounded-2xl border-l-4 border-blue-500 shadow-sm">
+                <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-3 flex items-center justify-between">
+                    GOOGLE <span class="text-xs bg-gray-100 dark:bg-slate-700 px-2 py-1 rounded text-gray-600 dark:text-gray-300 uppercase font-semibold">Internacional</span>
+                </h3>
+                <ul class="text-sm text-gray-600 dark:text-slate-400 space-y-2">
+                    <li><strong class="text-gray-800 dark:text-gray-200">Valores:</strong> Accesibilidad mundial e innovación tecnológica.</li>
+                    <li><strong class="text-gray-800 dark:text-gray-200">Tecnologías:</strong> HTML, CSS, JS, Python, Cloud.</li>
+                    <li><strong class="text-gray-800 dark:text-gray-200">Metodología:</strong> Entornos dinámicos y Code Review.</li>
+                </ul>
+            </article>
+        </div>
+
+        <!-- Preguntas para entrevista -->
+        <div class="bg-amber-50/80 dark:bg-amber-900/10 p-6 rounded-2xl border border-amber-100 dark:border-amber-900/30">
+            <h3 class="font-bold text-amber-800 dark:text-amber-400 mb-3 flex items-center gap-2">
+                <i class="fa-regular fa-comments"></i> Preguntas preparadas para entrevista
+            </h3>
+            <ul class="space-y-3 text-sm text-gray-700 dark:text-slate-300 list-disc pl-5">
+                <li>Considerando el stack tecnológico, ¿qué herramientas o frameworks consideran prioritarios que un perfil Junior domine durante sus primeros 3 meses?</li>
+                <li>¿Cómo estructuran el proceso de mentoría o acompañamiento para los roles Trainee que ingresan al área de desarrollo?</li>
+                <li>¿Cuáles son los desafíos técnicos más grandes que enfrenta el equipo en el proyecto al que me estaría incorporando?</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Matriz FODA -->
+    <section class="p-8 md:p-12 bg-white dark:bg-slate-900 border-b border-gray-100 dark:border-slate-800 print-page-break" aria-labelledby="foda-title">
+        <h2 id="foda-title" class="text-2xl font-bold text-gray-900 dark:text-white flex items-center gap-3 mb-8">
+            <span class="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400 flex items-center justify-center shadow-sm">
+                <i class="fa-solid fa-border-all"></i>
+            </span>
+            Matriz FODA Profesional
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-emerald-50/50 dark:bg-emerald-950/20 p-5 rounded-2xl border border-emerald-100 dark:border-emerald-900/50">
+                <h3 class="font-bold text-emerald-700 dark:text-emerald-400 mb-3 flex items-center gap-2"><i class="fa-solid fa-arrow-trend-up"></i> Fortalezas (Interno)</h3>
+                <ul class="space-y-2 text-sm text-gray-700 dark:text-slate-300">
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-500 mt-1 text-xs"></i> Rápido aprendizaje y adaptación a nuevos entornos.</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-500 mt-1 text-xs"></i> Habilidades de liderazgo y gestión proactiva.</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-500 mt-1 text-xs"></i> Excelente capacidad para la resolución de problemas.</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-500 mt-1 text-xs"></i> Fuerte empatía y creatividad en el diseño.</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-500 mt-1 text-xs"></i> Pensamiento analítico estructurado.</li>
                 </ul>
             </div>
-        </section>
 
-        <!-- Matriz FODA -->
-        <section class="p-8 md:p-12 bg-white dark:bg-slate-900 border-b border-gray-100 dark:border-slate-800 print-page-break" aria-labelledby="foda-title">
-            <h2 id="foda-title" class="text-2xl font-bold text-gray-900 dark:text-white flex items-center gap-3 mb-8">
-                <span class="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400 flex items-center justify-center shadow-sm">
-                    <i class="fa-solid fa-border-all"></i>
-                </span>
-                Matriz FODA Profesional
-            </h2>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-emerald-50/50 dark:bg-emerald-950/20 p-5 rounded-2xl border border-emerald-100 dark:border-emerald-900/50">
-                    <h3 class="font-bold text-emerald-700 dark:text-emerald-400 mb-3 flex items-center gap-2"><i class="fa-solid fa-arrow-trend-up"></i> Fortalezas (Interno)</h3>
-                    <ul class="space-y-2 text-sm text-gray-700 dark:text-slate-300">
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-500 mt-1 text-xs"></i> Rápido aprendizaje y adaptación a nuevos entornos.</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-500 mt-1 text-xs"></i> Habilidades de liderazgo y gestión proactiva.</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-500 mt-1 text-xs"></i> Excelente capacidad para la resolución de problemas.</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-500 mt-1 text-xs"></i> Fuerte empatía y creatividad en el diseño.</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-500 mt-1 text-xs"></i> Pensamiento analítico estructurado.</li>
-                    </ul>
-                </div>
-
-                <div class="bg-blue-50/50 dark:bg-blue-950/20 p-5 rounded-2xl border border-blue-100 dark:border-blue-900/50">
-                    <h3 class="font-bold text-blue-700 dark:text-blue-400 mb-3 flex items-center gap-2"><i class="fa-solid fa-globe"></i> Oportunidades (Externo)</h3>
-                    <ul class="space-y-2 text-sm text-gray-700 dark:text-slate-300">
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-dot text-blue-500 mt-1 text-xs"></i> Gran demanda global de desarrolladores en JavaScript.</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-dot text-blue-500 mt-1 text-xs"></i> Programas de inclusión para mujeres en TI.</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-dot text-blue-500 mt-1 text-xs"></i> Vacantes 100% remotas.</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-dot text-blue-500 mt-1 text-xs"></i> Abundantes APIs públicas para práctica.</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-dot text-blue-500 mt-1 text-xs"></i> Auge del e-commerce requiriendo UI/UX.</li>
-                    </ul>
-                </div>
-
-                <div class="bg-amber-50/50 dark:bg-amber-950/20 p-5 rounded-2xl border border-amber-100 dark:border-amber-900/50">
-                    <h3 class="font-bold text-amber-700 dark:text-amber-400 mb-3 flex items-center gap-2"><i class="fa-solid fa-seedling"></i> Áreas de Oportunidad (Interno)</h3>
-                    <ul class="space-y-2 text-sm text-gray-700 dark:text-slate-300">
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-minus text-amber-500 mt-1 text-xs"></i> Estimar con precisión tiempos de desarrollo.</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-minus text-amber-500 mt-1 text-xs"></i> Curva de aprendizaje inicial con nuevas tecnologías.</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-minus text-amber-500 mt-1 text-xs"></i> Inconsistencia en la estructura de commits.</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-minus text-amber-500 mt-1 text-xs"></i> Organización de ramas Git para pruebas.</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-minus text-amber-500 mt-1 text-xs"></i> Gestión de la ansiedad ante bloqueos de código.</li>
-                    </ul>
-                </div>
-
-                <div class="bg-rose-50/50 dark:bg-rose-950/20 p-5 rounded-2xl border border-rose-100 dark:border-rose-900/50">
-                    <h3 class="font-bold text-rose-700 dark:text-rose-400 mb-3 flex items-center gap-2"><i class="fa-solid fa-shield-halved"></i> Amenazas (Externo)</h3>
-                    <ul class="space-y-2 text-sm text-gray-700 dark:text-slate-300">
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-triangle-exclamation text-rose-500 mt-1 text-xs"></i> Alta competencia de perfiles Junior.</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-triangle-exclamation text-rose-500 mt-1 text-xs"></i> Actualizaciones constantes en frameworks.</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-triangle-exclamation text-rose-500 mt-1 text-xs"></i> Requisitos técnicos desproporcionados.</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-triangle-exclamation text-rose-500 mt-1 text-xs"></i> Filtros automatizados (ATS) estrictos.</li>
-                        <li class="flex items-start gap-2"><i class="fa-solid fa-triangle-exclamation text-rose-500 mt-1 text-xs"></i> Reducción de roles remotos.</li>
-                    </ul>
-                </div>
+            <div class="bg-blue-50/50 dark:bg-blue-950/20 p-5 rounded-2xl border border-blue-100 dark:border-blue-900/50">
+                <h3 class="font-bold text-blue-700 dark:text-blue-400 mb-3 flex items-center gap-2"><i class="fa-solid fa-globe"></i> Oportunidades (Externo)</h3>
+                <ul class="space-y-2 text-sm text-gray-700 dark:text-slate-300">
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-circle-dot text-blue-500 mt-1 text-xs"></i> Gran demanda global de desarrolladores en JavaScript.</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-circle-dot text-blue-500 mt-1 text-xs"></i> Programas de inclusión para mujeres en TI.</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-circle-dot text-blue-500 mt-1 text-xs"></i> Vacantes 100% remotas.</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-circle-dot text-blue-500 mt-1 text-xs"></i> Abundantes APIs públicas para práctica.</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-circle-dot text-blue-500 mt-1 text-xs"></i> Auge del e-commerce requiriendo UI/UX.</li>
+                </ul>
             </div>
-        </section>
 
-    </main>
+            <div class="bg-amber-50/50 dark:bg-amber-950/20 p-5 rounded-2xl border border-amber-100 dark:border-amber-900/50">
+                <h3 class="font-bold text-amber-700 dark:text-amber-400 mb-3 flex items-center gap-2"><i class="fa-solid fa-seedling"></i> Áreas de Oportunidad (Interno)</h3>
+                <ul class="space-y-2 text-sm text-gray-700 dark:text-slate-300">
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-minus text-amber-500 mt-1 text-xs"></i> Estimar con precisión tiempos de desarrollo.</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-minus text-amber-500 mt-1 text-xs"></i> Curva de aprendizaje inicial con nuevas tecnologías.</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-minus text-amber-500 mt-1 text-xs"></i> Inconsistencia en la estructura de commits.</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-minus text-amber-500 mt-1 text-xs"></i> Organización de ramas Git para pruebas.</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-minus text-amber-500 mt-1 text-xs"></i> Gestión de la ansiedad ante bloqueos de código.</li>
+                </ul>
+            </div>
+
+            <div class="bg-rose-50/50 dark:bg-rose-950/20 p-5 rounded-2xl border border-rose-100 dark:border-rose-900/50">
+                <h3 class="font-bold text-rose-700 dark:text-rose-400 mb-3 flex items-center gap-2"><i class="fa-solid fa-shield-halved"></i> Amenazas (Externo)</h3>
+                <ul class="space-y-2 text-sm text-gray-700 dark:text-slate-300">
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-triangle-exclamation text-rose-500 mt-1 text-xs"></i> Alta competencia de perfiles Junior.</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-triangle-exclamation text-rose-500 mt-1 text-xs"></i> Actualizaciones constantes en frameworks.</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-triangle-exclamation text-rose-500 mt-1 text-xs"></i> Requisitos técnicos desproporcionados.</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-triangle-exclamation text-rose-500 mt-1 text-xs"></i> Filtros automatizados (ATS) estrictos.</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-triangle-exclamation text-rose-500 mt-1 text-xs"></i> Reducción de roles remotos.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="p-8 bg-gray-50 dark:bg-slate-900 border-t border-gray-200 dark:border-slate-800 text-center">
