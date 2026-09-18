@@ -52,7 +52,7 @@
     </script>
 </head>
 
-<body class="bg-gray-100 dark:bg-gray-950 text-gray-800 dark:text-gray-200 font-sans min-h-screen pt-24 pb-12 transition-colors duration-400">
+<body class="bg-gray-100 dark:bg-gray-950 text-gray-800 dark:text-gray-200 font-sans min-h-screen pt-24 pb-12 transition-colors duration-500">
 
     <!-- Skip-link para accesibilidad por teclado -->
     <a href="#main-content" class="skip-link sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-indigo-600 text-white px-4 py-2 rounded-md z-50">
@@ -64,11 +64,7 @@
         <button id="themeToggle" class="p-2.5 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-yellow-400 hover:bg-gray-200 dark:hover:bg-gray-700 transition" aria-label="Alternar modo oscuro">
             <i class="fa-solid fa-moon dark:hidden"></i>
             <i class="fa-solid fa-sun hidden dark:inline"></i>
-        </button>
-        <div class="w-px h-6 bg-gray-300 dark:bg-gray-700 mx-1"></div>
-        <button onclick="window.print()" class="px-4 py-2 rounded-full flex items-center gap-2 bg-indigo-600 text-white text-sm font-medium hover:bg-indigo-700 transition shadow-md">
-            <i class="fa-solid fa-file-pdf"></i> Imprimir CV
-        </button>
+        </button>        
     </div>
 
     <main id="main-content" class="container mx-auto px-4">
@@ -150,7 +146,7 @@
 
         <div class="space-y-8">
             
-            <!-- Proyecto 1: Alke Wallet (AHORA ES EL CASO DE ESTUDIO PRINCIPAL) -->
+            <!-- Proyecto 1: Alke Wallet -->
             <article class="group bg-white dark:bg-slate-800 rounded-2xl p-6 border-2 border-indigo-100 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300 relative overflow-hidden">
                 <div class="flex justify-between items-start mb-4">
                     <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
@@ -163,7 +159,7 @@
                     Aplicación de billetera digital para gestionar activos financieros de manera 100% digital. Permite a los usuarios tener un control de saldos e ingresos, realizar transferencias rápidas a su agenda y visualizar un historial detallado de movimientos.
                 </p>
 
-                <!-- Desafío y Solución técnica centrada en Alke Wallet -->
+                <!-- Desafío y Solución técnica -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5">
                     <div class="bg-gray-50 dark:bg-slate-900/50 p-4 rounded-xl border border-gray-100 dark:border-slate-800">
                         <h4 class="text-xs font-bold text-gray-900 dark:text-white uppercase mb-2">
@@ -181,22 +177,26 @@
                         </h4>
                         <ul class="text-xs text-gray-600 dark:text-slate-400 space-y-1">
                             <li><i class="fa-solid fa-check text-indigo-500"></i> Uso de etiquetas HTML semánticas y el sistema de grillas de Bootstrap para UI/UX.</li>
-                            <li><i class="fa-solid fa-check text-indigo-500"></i> Lógica en jQuery y JS Vanilla para persistencia con <code>localStorage</code> (guardando transacciones y saldos).</li>
+                            <li><i class="fa-solid fa-check text-indigo-500"></i> Lógica en jQuery y JS Vanilla para persistencia con <code>localStorage</code>.</li>
                             <li><i class="fa-solid fa-check text-indigo-500"></i> Alertas interactivas dinámicas para la validación de credenciales en el login.</li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- Stack Tecnológico -->
-                <div class="flex flex-wrap gap-2 mb-6">
+                <div class="flex flex-wrap gap-2 mb-4">
                     <span class="text-xs px-2.5 py-1 bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-300 rounded-md"><i class="fa-brands fa-html5"></i> HTML5</span>
                     <span class="text-xs px-2.5 py-1 bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-300 rounded-md"><i class="fa-brands fa-bootstrap"></i> Bootstrap 5</span>
                     <span class="text-xs px-2.5 py-1 bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300 rounded-md"><i class="fa-brands fa-js"></i> JavaScript & jQuery</span>
                     <span class="text-xs px-2.5 py-1 bg-gray-100 text-gray-800 dark:bg-slate-700 dark:text-gray-300 rounded-md"><i class="fa-solid fa-database"></i> LocalStorage</span>
                 </div>
 
-                <p>Para la demo el usuario es: test@wallet.com</p>
-                <p>y su contraseña es: 1234</p>
+                <!-- Credenciales formateadas -->
+                <div class="mb-2 p-3 bg-indigo-50 dark:bg-indigo-900/20 rounded-lg border border-indigo-100 dark:border-indigo-800/30 inline-block">
+                    <p class="text-sm text-indigo-800 dark:text-indigo-300">
+                        <i class="fa-solid fa-circle-info mr-2"></i><strong>Usuario Demo:</strong> test@wallet.com <span class="mx-2">|</span> <strong>Pass:</strong> 1234
+                    </p>
+                </div>
 
                 <!-- Enlaces de Evidencia -->
                 <div class="flex flex-wrap gap-3 mt-4 pt-4 border-t border-gray-100 dark:border-slate-700">
@@ -211,7 +211,7 @@
                 </div>
             </article>
 
-            <!-- Proyecto 2: TaskFlow (Ahora proyecto secundario) -->
+            <!-- Proyecto 2: TaskFlow -->
             <article class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-gray-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-all duration-300">
                 <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
                     <div>
@@ -248,7 +248,7 @@
                     <div class="flex gap-2 shrink-0">
                         <a href="https://marielvga.github.io/Node-Express-Web-App-/" target="_blank" rel="noopener noreferrer" class="p-2 text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-900/30 hover:bg-indigo-100 dark:hover:bg-indigo-900/50 rounded-lg transition" aria-label="Ver demostración en vivo">
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
+                        </a> <!-- AQUÍ FALTABA ESTA ETIQUETA DE CIERRE -->
                         <a href="https://github.com/MarielVga/Node-Express-Web-App-" target="_blank" rel="noopener noreferrer"
                             class="p-2 text-gray-700 dark:text-gray-300 bg-gray-100 dark:bg-slate-700 hover:bg-gray-200 dark:hover:bg-slate-600 rounded-lg transition"
                             aria-label="Ver código fuente en GitHub">

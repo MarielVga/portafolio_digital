@@ -38,7 +38,6 @@ portafolio-mariela/
 │       ├── utils/
 │       │   └── themeConfig.js # Lógica modular del modo oscuro
 │       └── app.js          # Archivo JS principal (Entry point)
-├── docs/                   # (Opcional) Carpeta para el CV en PDF
 ├── index.html              # Página principal del portafolio
 ├── 404.html                # Página de error personalizada
 ├── robots.txt              # Reglas para crawlers
